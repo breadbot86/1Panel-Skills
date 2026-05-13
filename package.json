@@ -1,0 +1,23 @@
+{
+  "name": "@breadbot/1panel-skills",
+  "version": "0.2.0",
+  "description": "1Panel API skill with Node.js tool/MCP support",
+  "type": "module",
+  "bin": {
+    "1panel-tool": "./tools/1panel-tool.js",
+    "1panel-mcp": "./tools/1panel-mcp.js"
+  },
+  "scripts": {
+    "test": "node --check tools/1panel-lib.js && node --check tools/1panel-tool.js && node --check tools/1panel-mcp.js && node tools/1panel-tool.js endpoints --limit 3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "1panel",
+    "mcp",
+    "agent-tools",
+    "server-panel"
+  ],
+  "license": "MIT"
+}
